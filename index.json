@@ -1,0 +1,23 @@
+{
+  "repository_version": "1.0",
+  "updated_at": "2026-11-13T01:45:42Z",
+  "modules": {
+    "OpenaiAPI": {
+      "type": "LLM",
+      "name": "OpenaiAPI",
+      "title": "OpenAI API",
+      "description": "Openai API integration",
+      "version": "0.1.0",
+      "author": "sergeial1972",
+      "path": "modules/openai_API",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "dependencies": [
+        "openai"
+      ],
+      "autosetup": true
+    }
+  }
+}
