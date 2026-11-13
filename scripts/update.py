@@ -1,16 +1,19 @@
-#imports
 from datetime import datetime, timezone
 import json
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-
 MODULES_DIR = ROOT_DIR / "modules"
-
 INDEX_FILE = ROOT_DIR / "index.json"
+
 
 def update():
     modules_data = {}
+
+    if not MODULES_DIR.exists():
+        print(f"Directory {MODULES_DIR} not found.")
+        return
+
     for folder in sorted(MODULES_DIR.iterdir()):
         if not folder.is_dir() or folder.name.startswith(("_", ".")):
             continue
@@ -20,7 +23,7 @@ def update():
             continue
 
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-        mod_name = manifest.get("name")
+        mod_name = manifest.get("name") or folder.name
 
         files = [
             f.relative_to(folder).as_posix()
@@ -28,7 +31,7 @@ def update():
             if f.is_file() and "__pycache__" not in f.parts
         ]
 
-    modules_data[mod_name] = {
+        modules_data[mod_name] = {
             "type": manifest.get("type", "unknown"),
             "name": mod_name,
             "title": manifest.get("title", mod_name),
@@ -38,8 +41,9 @@ def update():
             "path": f"modules/{folder.name}",
             "files": files,
             "dependencies": manifest.get("dependencies", []),
+            "autosetup": manifest.get("autosetup", False),
         }
-    
+
     index = {
         "repository_version": "1.0",
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -52,7 +56,6 @@ def update():
     )
 
     print(f"Modules updated: {len(modules_data)}")
-
 
 
 if __name__ == "__main__":

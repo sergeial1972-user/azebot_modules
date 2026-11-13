@@ -1,0 +1,10 @@
+{
+    "type": "LLM",
+    "name": "OpenaiAPI",
+    "title": "OpenAI API",
+    "description": "Openai API integration",
+    "version": "0.1.0",
+    "author": "sergeial1972",
+    "dependencies": ["openai"],
+    "autosetup":true
+}
