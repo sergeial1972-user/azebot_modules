@@ -4,7 +4,7 @@ from openai import AsyncOpenAI
 from pathlib import Path
 import json
 
-CONFIG_FILE = Path("config.json")
+CONFIG_FILE = Path(__file__).parent / "config.json"
 
 def check_config() -> bool:
     """Проверяет, существует ли файл конфигурации."""
