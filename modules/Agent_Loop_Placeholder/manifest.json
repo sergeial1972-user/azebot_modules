@@ -1,0 +1,10 @@
+{
+    "type": "agent_loop",
+    "name": "Agent_LOOP_PLACEHOLDER",
+    "title": "Agent_LOOP_PLACEHOLDER",
+    "description": "Simple IN -> OUT agent loop imitation",
+    "version": "0.1.0",
+    "author": "sergeial1972",
+    "dependencies": [],
+    "autosetup": false
+}
