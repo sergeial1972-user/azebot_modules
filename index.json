@@ -1,7 +1,22 @@
 {
   "repository_version": "1.0",
-  "updated_at": "2026-11-16T00:22:23Z",
+  "updated_at": "2026-11-16T09:26:07Z",
   "modules": {
+    "Agent_LOOP_PLACEHOLDER": {
+      "type": "agent_loop",
+      "name": "Agent_LOOP_PLACEHOLDER",
+      "title": "Agent_LOOP_PLACEHOLDER",
+      "description": "Simple IN -> OUT agent loop imitation",
+      "version": "0.1.0",
+      "author": "sergeial1972",
+      "path": "modules/Agent_Loop_Placeholder",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "dependencies": [],
+      "autosetup": false
+    },
     "OpenaiAPI": {
       "type": "LLM",
       "name": "OpenaiAPI",
