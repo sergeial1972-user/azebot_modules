@@ -1,0 +1,10 @@
+{
+    "type": "comm",
+    "name": "azebot_cli",
+    "title": "azebot_cli",
+    "description": "cli for azebot",
+    "version": "0.1.0",
+    "author": "sergeial1972",
+    "dependencies": ["asyncio"],
+    "autosetup": false
+}
