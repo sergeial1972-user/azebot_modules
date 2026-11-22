@@ -1,6 +1,6 @@
 {
   "repository_version": "1.0",
-  "updated_at": "2026-11-22T14:43:24Z",
+  "updated_at": "2026-11-22T22:24:01Z",
   "modules": {
     "Agent_LOOP_PLACEHOLDER": {
       "type": "agent_loop",
@@ -15,6 +15,23 @@
         "manifest.json"
       ],
       "dependencies": [],
+      "autosetup": false
+    },
+    "api": {
+      "type": "inernal_api",
+      "name": "api",
+      "title": "api",
+      "description": "api for azebot",
+      "version": "0.1.0",
+      "author": "sergeial1972",
+      "path": "modules/api",
+      "files": [
+        "main.py",
+        "manifest.json"
+      ],
+      "dependencies": [
+        "fastapi"
+      ],
       "autosetup": false
     },
     "OpenaiAPI": {
