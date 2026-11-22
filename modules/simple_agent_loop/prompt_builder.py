@@ -14,6 +14,7 @@ class PromptBuilder:
 
     async def add_section(self, section: Section):
         section_dict = {
+            "type": "message",
             "role": section.role,
             "content": section.content,
         }
