@@ -1,0 +1,10 @@
+{
+    "type": "agent_loop",
+    "name": "straight agent",
+    "title": "straight agent",
+    "description": "Straight without loop IN -> LLM -> OUT",
+    "version": "0.1.0",
+    "author": "sergeial1972",
+    "dependencies": [],
+    "autosetup": false
+}
