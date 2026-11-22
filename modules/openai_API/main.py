@@ -81,4 +81,5 @@ async def main(
     async with AsyncOpenAI(**client_kwargs) as client:
         response = await client.responses.create(**response_kwargs)
 
-    return response
+
+    return response.output_text
