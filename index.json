@@ -1,6 +1,6 @@
 {
   "repository_version": "1.0",
-  "updated_at": "2026-11-22T01:48:58Z",
+  "updated_at": "2026-11-22T01:50:30Z",
   "modules": {
     "Agent_LOOP_PLACEHOLDER": {
       "type": "agent_loop",
@@ -34,11 +34,11 @@
       ],
       "autosetup": true
     },
-    "Simple agent  loop": {
-      "type": "agent_loop",
-      "name": "Simple agent  loop",
-      "title": "Simple agent  loop",
-      "description": "Simple agent  loop",
+    "straight agent": {
+      "type": "straight agent",
+      "name": "straight agent",
+      "title": "straight agent",
+      "description": "Straight without loop IN -> LLM -> OUT",
       "version": "0.1.0",
       "author": "sergeial1972",
       "path": "modules/simple_agent_loop",
