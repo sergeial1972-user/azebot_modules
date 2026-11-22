@@ -1,8 +1,8 @@
 {
-    "type": "agent_loop",
-    "name": "Simple agent  loop",
-    "title": "Simple agent  loop",
-    "description": "Simple agent  loop",
+    "type": "straight agent",
+    "name": "straight agent",
+    "title": "straight agent",
+    "description": "Straight without loop IN -> LLM -> OUT",
     "version": "0.1.0",
     "author": "sergeial1972",
     "dependencies": [],
