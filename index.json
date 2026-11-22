@@ -1,6 +1,6 @@
 {
   "repository_version": "1.0",
-  "updated_at": "2026-11-22T02:14:13Z",
+  "updated_at": "2026-11-22T14:43:24Z",
   "modules": {
     "Agent_LOOP_PLACEHOLDER": {
       "type": "agent_loop",
@@ -41,7 +41,7 @@
       "description": "Straight without loop IN -> LLM -> OUT",
       "version": "0.1.0",
       "author": "sergeial1972",
-      "path": "modules/simple_agent_loop",
+      "path": "modules/straight agent",
       "files": [
         "main.py",
         "manifest.json",
