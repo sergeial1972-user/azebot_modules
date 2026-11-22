@@ -6,7 +6,8 @@ from typing import Any
 from openai import AsyncOpenAI
 
 
-CONFIG_FILE = Path("config.json")
+CONFIG_FILE = Path(__file__).parent / "config.json"
+
 
 
 def check_config() -> bool:
