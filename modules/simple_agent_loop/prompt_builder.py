@@ -1,7 +1,7 @@
 class Section:
-    def __init__(self, role, prompt):
-        role: str
-        prompt: str
+    def __init__(self, role, content):
+        self.role = role
+        self.content = content
 
 
 
@@ -15,7 +15,7 @@ class PromptBuilder:
     async def add_section(self, section: Section):
         section_dict = {
             "role": section.role,
-            "prompt": section.prompt,
+            "content": section.content,
         }
 
         self.final_prompt.append(section_dict)
