@@ -1,10 +1,10 @@
 {
-    "type": "inernal_api",
+    "type": "internal_api",
     "name": "api",
     "title": "api",
     "description": "api for azebot",
     "version": "0.1.0",
     "author": "sergeial1972",
-    "dependencies": ["fastapi"],
+    "dependencies": ["fastapi", "uvicorn"],
     "autosetup": false
 }
