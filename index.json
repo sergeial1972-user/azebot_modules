@@ -1,6 +1,6 @@
 {
   "repository_version": "1.0",
-  "updated_at": "2026-11-22T22:24:01Z",
+  "updated_at": "2026-11-23T00:13:21Z",
   "modules": {
     "Agent_LOOP_PLACEHOLDER": {
       "type": "agent_loop",
@@ -18,7 +18,7 @@
       "autosetup": false
     },
     "api": {
-      "type": "inernal_api",
+      "type": "internal_api",
       "name": "api",
       "title": "api",
       "description": "api for azebot",
@@ -30,7 +30,8 @@
         "manifest.json"
       ],
       "dependencies": [
-        "fastapi"
+        "fastapi",
+        "uvicorn"
       ],
       "autosetup": false
     },
